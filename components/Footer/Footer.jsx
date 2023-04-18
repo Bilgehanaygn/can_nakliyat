@@ -107,7 +107,7 @@ const Footer = () => {
                                     "Eşya Depolama",
                                     "Parça Eşya Taşıma"
 
-                                ].map((element,index)=><div style={{marginBottom:2}} >{element}</div>)
+                                ].map((element,index)=><div key={index} style={{marginBottom:2}} >{element}</div>)
                             }
                             
                         </div>
@@ -123,7 +123,7 @@ const Footer = () => {
                                     "Hastane Taşımacılığı",
                                     "Fabrika Nakliyesi",
                                     "Banka Taşımacılığı"
-                                ].map((element,index)=><div style={{marginBottom:2}} >{element}</div>)
+                                ].map((element,index)=><div key={index} style={{marginBottom:2}} >{element}</div>)
                             }
                             
                         </div>
