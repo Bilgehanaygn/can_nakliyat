@@ -5,6 +5,7 @@ import Asansor from '../../assets/asansor_alt.png';
 import homeImage1 from '../../assets/home_image1.webp';
 import Smiling from '../../assets/smiling.png';
 import NavigationButton from '../NavigationButton/NavigationButton';
+import Footer from '../Footer/Footer';
 
 
 
@@ -62,7 +63,7 @@ const HomeMain = () => {
 
                 </div>
             </div>
-
+            <Footer />
         </div>
     )
 }

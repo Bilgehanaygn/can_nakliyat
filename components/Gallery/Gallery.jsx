@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import galleryStyles from './gallery.module.css';
 import Image from 'next/future/image';
 import allGalleryImages from '../../assets/gallery/index';
+import Footer from '../Footer/Footer';
 
 const GalleryMember = ({galleryImage}) => {
 
@@ -44,6 +45,7 @@ const Team = () => {
                     )
                 }
             </div>
+            <Footer />
 
          </div>
     )
