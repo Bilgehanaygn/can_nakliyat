@@ -25,7 +25,7 @@ const Header = () => {
 
                     <Link href="/" >
                         <a>
-                            <Image src={Logo} alt="Logo" height="100%" width="110" style={{cursor:"pointer"}} />
+                            <Image src={Logo} alt="Logo" height="90%" width="100" style={{cursor:"pointer"}} />
                         </a>
                     </Link>
                     <NavigationButton innerText="GALERİ" givenLink="/galeri" enabled={true} activeRoute={router.pathname} />
@@ -34,7 +34,7 @@ const Header = () => {
                 <div className={headerStyles['mobileheader-wrapper']} >
                     <Link href="/"  >
                         <a style={{zIndex:3}}>
-                            <Image src={Logo} alt="Logo" height="100%" width="110px" style={{cursor:"pointer"}} />
+                            <Image src={Logo} alt="Logo" height="90%" width="100" style={{cursor:"pointer"}} />
                         </a>
                     </Link>
                     <div onClick={()=>{setModalOpen(!modalOpen)}} style={{zIndex:3}} >

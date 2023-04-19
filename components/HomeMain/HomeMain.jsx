@@ -6,7 +6,7 @@ import homeImage1 from '../../assets/home_image1.webp';
 import Smiling from '../../assets/smiling.png';
 import NavigationButton from '../NavigationButton/NavigationButton';
 import Footer from '../Footer/Footer';
-
+import ImageSlide from '../ImageSlide/ImageSlide';
 
 
 const HomeMain = () => {
@@ -21,6 +21,9 @@ const HomeMain = () => {
 
     return (
         <div className={homeMainStyles['homemain-container']} >
+            <div className={homeMainStyles['imageslide-container']} >
+                <ImageSlide />
+            </div>
             <div className={homeMainStyles['homemain-outerblock']}  >
                 <div className={homeMainStyles['homemain-innerblock']}  >
                     <Image src={Asansor} />
@@ -63,6 +66,7 @@ const HomeMain = () => {
 
                 </div>
             </div>
+
             <Footer />
         </div>
     )
