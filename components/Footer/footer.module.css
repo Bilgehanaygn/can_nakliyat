@@ -1,69 +1,64 @@
-
-.outer-block{
-    background-color: #3b3a3e;
-    padding: 10px 10%;
-    display:flex;
-    flex-direction: row;
-    justify-content: space-between;
+.outer-block {
+  background-color: #3b3a3e;
+  padding: 10px 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 50px;
 }
 
-.inner-block{
-    height: 400px;
-    width: 30%;
+.inner-block {
+  height: 400px;
+  width: 30%;
 }
 
-.upper-footer{
-    background-color: #ff9b0f;
-    padding:5px;
-    margin-bottom: 15px;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    font-weight: 500;
-    font-size: 18px;
-    border-radius: 5px;
+.upper-footer {
+  background-color: #ff9b0f;
+  padding: 5px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  font-size: 18px;
+  border-radius: 5px;
 }
 
-.right-inner{
-    display: flex; 
-    height: 70%; 
-    flex-direction: row; 
-    justify-content: space-between; 
-    align-items: center; 
-    color: white; 
-    padding: 0px 20px;
+.right-inner {
+  display: flex;
+  height: 70%;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 0px 20px;
 }
 
-.right-inner-heading{
-    font-weight: 500;
-    font-size: 18px;
+.right-inner-heading {
+  font-weight: 500;
+  font-size: 18px;
 }
-
 
 @media only screen and (max-width: 800px) {
-    
-    .outer-block{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    .inner-block{
-        width: 100%;
-    }
+  .outer-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 
-    .right-inner{
-        padding: 0px 0px;
-    }
+  .inner-block {
+    width: 100%;
+  }
 
-    .right-inner-heading{
-        font-size: 15px;
-        text-align: left;
-    }
+  .right-inner {
+    padding: 0px 0px;
+  }
 
-
-
+  .right-inner-heading {
+    font-size: 15px;
+    text-align: left;
+  }
 }
