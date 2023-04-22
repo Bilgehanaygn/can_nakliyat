@@ -37,7 +37,7 @@ const WhatsAppIcon = ({ width = 50, height = 50 }) => {
         width={width}
         height={height}
         fill="green"
-        class="bi bi-whatsapp"
+        className="bi bi-whatsapp"
         viewBox="0 0 16 16"
         style={{ marginRight: 5 }}
       >
