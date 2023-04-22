@@ -8,6 +8,17 @@ import NavigationButton from "../NavigationButton/NavigationButton";
 import Footer from "../Footer/Footer";
 import ImageSlide from "../ImageSlide/ImageSlide";
 import CheckMark from "../Icons/CheckMark/ChecMark";
+import MusteriMemnuniyetiImage from "../../assets/musteri_memnuniyeti.png";
+import AdaletBakanligi from "../../assets/adalet-bak.webp";
+import IcisleriBakanligi from "../../assets/icisleri-bak.webp";
+import Jandarma from "../../assets/jandarmaa.webp";
+import KaraYollari from "../../assets/kara-yollari.webp";
+import MamakBelediyesi from "../../assets/mamak-belediyesi.png";
+import Meclis from "../../assets/meclis.webp";
+import Sigorta from "../../assets/sigorta.webp";
+import Danistayy from "../../assets/danistayy.webp";
+import AnkaraUni from "../../assets/ankara-universite.webp";
+import DusunmeTasin from "../../assets/dusunmeyin_tasinin.jpg";
 
 const Avatar = ({ imageLink, width, height }) => {
   return (
@@ -25,7 +36,7 @@ const Avatar = ({ imageLink, width, height }) => {
           border: "1px dashed black",
         }}
       >
-        <Image src={imageLink} width={width} height={height} />
+        <Image src={imageLink} width={width} height={height} alt={"nakliye"} />
       </div>
       <div style={{ fontSize: 25, fontWeight: 500, color: "white" }}>
         Ayca Hanim
@@ -50,7 +61,7 @@ const HomeMain = () => {
             boxSizing: "border-box",
           }}
         >
-          <Image src={Asansor} />
+          <Image src={Asansor} alt={"nakliye"} />
           <h5 style={{ fontWeight: 400, fontSize: 20 }}>
             EVDEN EVE ASANSÖRLÜ TAŞIMACILIK HİZMETİ
           </h5>
@@ -61,7 +72,7 @@ const HomeMain = () => {
           </p>
         </div>
         <div className={homeMainStyles["homemain-innerblock"]}>
-          <Image src={homeImage1} width={300} height={65} />
+          <Image src={homeImage1} width={300} height={65} alt={"nakliye"} />
           <div
             style={{
               fontWeight: 500,
@@ -102,25 +113,86 @@ const HomeMain = () => {
       </div>
       <div
         className={homeMainStyles["homemain-outerblock"]}
-        style={{ backgroundColor: "#3b3a3e" }}
+        style={{ backgroundColor: "#3b3a3e", color: "white", fontSize: 22 }}
       >
         <div
           className={homeMainStyles["homemain-innerblock"]}
           style={{ boxShadow: "none", height: 500 }}
-        ></div>
+        >
+          <div
+            style={{
+              width: 300,
+              border: "2px dashed green",
+              padding: 10,
+            }}
+          >
+            <div style={{ fontSize: 25, marginBottom: 20, fontWeight: 500 }}>
+              Fiyat Bilgisi
+            </div>
+            <div style={{ margin: "auto" }}>
+              <Image
+                src={MusteriMemnuniyetiImage}
+                alt={"nakliye"}
+                width={100}
+                height={100}
+              />
+            </div>
+            Kesin fiyat verebilmemiz için bize evinizdeki eşyaları kabaca
+            gösteren bir video yollamanız, veya bir eksper arkadaşımızın evinizi
+            ziyaret etmesi gerekmektedir.
+          </div>
+        </div>
         <div
           className={homeMainStyles["homemain-innerblock"]}
           style={{ boxShadow: "none", height: 500 }}
-        ></div>
+        >
+          <Image src={DusunmeTasin} alt="nakliye" style={{ borderRadius: 5 }} />
+        </div>
         <div
           className={homeMainStyles["homemain-innerblock"]}
           style={{ boxShadow: "none", height: 500 }}
-        ></div>
+        >
+          <div className={homeMainStyles["partners-line-wrapper"]}>
+            <Image
+              src={AdaletBakanligi}
+              alt={"ankara"}
+              width={100}
+              height={100}
+            />
+            <Image
+              src={IcisleriBakanligi}
+              alt={"ankara"}
+              width={100}
+              height={100}
+            />
+            <Image src={Sigorta} alt={"ankara"} width={100} height={100} />
+          </div>
+          <div className={homeMainStyles["partners-line-wrapper"]}>
+            <Image src={Jandarma} alt={"ankara"} width={100} height={100} />
+            <Image src={KaraYollari} alt={"ankara"} width={100} height={100} />
+            <Image src={Danistayy} alt={"ankara"} width={100} height={100} />
+          </div>
+          <div className={homeMainStyles["partners-line-wrapper"]}>
+            <Image
+              src={MamakBelediyesi}
+              alt={"ankara"}
+              width={100}
+              height={100}
+            />
+            <Image src={AnkaraUni} alt={"ankara"} width={100} height={100} />
+            <Image src={Meclis} alt={"ankara"} width={100} height={100} />
+          </div>
+        </div>
       </div>
 
       <div className={homeMainStyles["homemain-outerblock"]}>
         <div className={homeMainStyles["homemain-innerblock"]} style={{}}>
-          <Avatar imageLink={Smiling} height={100} width={100} />
+          <Avatar
+            imageLink={Smiling}
+            alt={"nakliye"}
+            height={100}
+            width={100}
+          />
           <div style={{ fontSize: 20, color: "white", padding: "5px 25px" }}>
             Ayca Hanim biiz denedi cok memnun kaldi, siz de denerseniz sizin de
             kalacaginizdan eminim. Ayca Hanim biiz denedi cok memnun kaldi, siz
