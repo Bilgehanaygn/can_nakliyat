@@ -44,11 +44,6 @@ const HomeMain = () => {
         <div
           className={homeMainStyles["homemain-innerblock"]}
           style={{
-            boxShadow: "0px 4px 8px 0px rgba(0,0,0,0.2)",
-            transition: "0.3s",
-            borderRadius: "5px",
-            backgroundColor: "#3b3a3e",
-            justifyContent: "space-evenly",
             color: "white",
             fontWeight: 500,
             padding: "10px 20px",
@@ -65,16 +60,7 @@ const HomeMain = () => {
             fazla başarılı taşıma işi ile
           </p>
         </div>
-        <div
-          className={homeMainStyles["homemain-innerblock"]}
-          style={{
-            boxShadow: "0px 4px 8px 0px rgba(0,0,0,0.2)",
-            transition: "0.3s",
-            borderRadius: "5px",
-            backgroundColor: "#3b3a3e",
-            justifyContent: "space-evenly",
-          }}
-        >
+        <div className={homeMainStyles["homemain-innerblock"]}>
           <Image src={homeImage1} width={300} height={65} />
           <div
             style={{
@@ -114,18 +100,26 @@ const HomeMain = () => {
           </div>
         </div>
       </div>
-
-      <div className={homeMainStyles["homemain-outerblock"]}>
+      <div
+        className={homeMainStyles["homemain-outerblock"]}
+        style={{ backgroundColor: "#3b3a3e" }}
+      >
         <div
           className={homeMainStyles["homemain-innerblock"]}
-          style={{
-            boxShadow: "0px 4px 8px 0px rgba(0,0,0,0.2)",
-            transition: "0.3s",
-            borderRadius: "5px",
-            backgroundColor: "#3b3a3e",
-            justifyContent: "space-evenly",
-          }}
-        >
+          style={{ boxShadow: "none", height: 500 }}
+        ></div>
+        <div
+          className={homeMainStyles["homemain-innerblock"]}
+          style={{ boxShadow: "none", height: 500 }}
+        ></div>
+        <div
+          className={homeMainStyles["homemain-innerblock"]}
+          style={{ boxShadow: "none", height: 500 }}
+        ></div>
+      </div>
+
+      <div className={homeMainStyles["homemain-outerblock"]}>
+        <div className={homeMainStyles["homemain-innerblock"]} style={{}}>
           <Avatar imageLink={Smiling} height={100} width={100} />
           <div style={{ fontSize: 20, color: "white", padding: "5px 25px" }}>
             Ayca Hanim biiz denedi cok memnun kaldi, siz de denerseniz sizin de
@@ -136,11 +130,6 @@ const HomeMain = () => {
         <div
           className={homeMainStyles["homemain-innerblock"]}
           style={{
-            boxShadow: "0px 4px 8px 0px rgba(0,0,0,0.2)",
-            transition: "0.3s",
-            borderRadius: "5px",
-            backgroundColor: "#3b3a3e",
-            justifyContent: "space-evenly",
             color: "white",
             fontWeight: 500,
           }}
@@ -152,87 +141,51 @@ const HomeMain = () => {
               display: "flex",
               flexDirection: "column",
               justifyContent: "space-between",
-              alignItems: "start",
               fontSize: 22,
             }}
           >
-            <div
-              style={{
-                display: "flex",
-                flexDirection: "row",
-                justifyContent: "center",
-                alignItems: "center",
-              }}
+            <a
+              href={"/iletisim"}
+              className={homeMainStyles["hizmetler-button"]}
             >
               <CheckMark />
               Şehiriçi Nakliyat
-            </div>
-            <div
-              style={{
-                display: "flex",
-                flexDirection: "row",
-                justifyContent: "center",
-                alignItems: "center",
-              }}
+            </a>
+            <a
+              href={"/iletisim"}
+              className={homeMainStyles["hizmetler-button"]}
             >
               <CheckMark />
               Şehirlerarası Nakliyat
-            </div>
-            <div
-              style={{
-                display: "flex",
-                flexDirection: "row",
-                justifyContent: "center",
-                alignItems: "center",
-              }}
+            </a>
+            <a
+              href={"/iletisim"}
+              className={homeMainStyles["hizmetler-button"]}
             >
               <CheckMark />
               Asansörlü Taşımacılık
-            </div>
-            <div
-              style={{
-                display: "flex",
-                flexDirection: "row",
-                justifyContent: "center",
-                alignItems: "center",
-              }}
+            </a>
+            <a
+              href={"/iletisim"}
+              className={homeMainStyles["hizmetler-button"]}
             >
               <CheckMark />
               Kurumsal Taşıma
-            </div>
-            <div
-              style={{
-                display: "flex",
-                flexDirection: "row",
-                justifyContent: "center",
-                alignItems: "center",
-              }}
-            >
-              <CheckMark />
-              Ofis Büro Taşıma
-            </div>
-            <div
-              style={{
-                display: "flex",
-                flexDirection: "row",
-                justifyContent: "center",
-                alignItems: "center",
-              }}
+            </a>
+            <a
+              href={"/iletisim"}
+              className={homeMainStyles["hizmetler-button"]}
             >
               <CheckMark />
               Parça Eşya Taşıma
-            </div>
-            <div
-              style={{
-                display: "flex",
-                flexDirection: "row",
-                justifyContent: "center",
-                alignItems: "center",
-              }}
+            </a>
+            <a
+              href={"/iletisim"}
+              className={homeMainStyles["hizmetler-button"]}
             >
               <CheckMark />
               Eşya Depolama
-            </div>
+            </a>
           </div>
         </div>
       </div>

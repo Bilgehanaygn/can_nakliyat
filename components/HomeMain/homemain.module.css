@@ -1,42 +1,61 @@
-.homemain-container{
-    height: calc(100vh - 90px);
-    width: 100%;
-    text-align: center;
-    overflow-y: auto;
-
+.homemain-container {
+  height: calc(100vh - 90px);
+  width: 100%;
+  text-align: center;
+  overflow-y: auto;
 }
 
-.homemain-outerblock{
-    margin-top: 50px;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
+.homemain-outerblock {
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
-.homemain-innerblock{
-    width:30%;
-    height: 400px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+.homemain-innerblock {
+  width: 30%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+  background-color: #3b3a3e;
 }
 
+.hizmetler-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #f2d0a4;
+  color: black !important;
+  padding: 5px 20px;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+}
 
+.hizmetler-button:hover {
+  cursor: pointer;
+  background-color: #e6c49a;
+  transition: background-color 0.2s ease-in-out;
+}
 
 @media only screen and (max-width: 800px) {
-    .homemain-outerblock{
-        flex-direction: column;
-        justify-content: start;
-        align-items: center;
-    }
+  .homemain-outerblock {
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+  }
 
-    .homemain-innerblock{
-        width: 100%;
-        height: 500px;
-        margin-bottom: 50px;
-    }
-
+  .homemain-innerblock {
+    width: 100%;
+    height: 500px;
+    margin-bottom: 50px;
+  }
 }
