@@ -7,6 +7,7 @@ const WhatsAppIcon = ({ width = 50, height = 50 }) => {
     <a
       href="https://wa.me/+905545854299"
       target="_blank"
+      rel="noreferrer"
       style={{
         position: "absolute",
         right: 10,
