@@ -6,6 +6,11 @@ import image3 from '../../assets/a3c828063eaf33804b053baff6bce3424ccda797.png';
 import image4 from '../../assets/87cf76d868d9ab07c01b634ccb8c5119112b16bd.png';
 import image5 from '../../assets/3ecc3c9b02933a53bdaf979959eff2e97f889fea.png';
 import image6 from '../../assets/0f18c518c28a1bf2ec403d6b4b98e15c8f18ddf1.png';
+import image7 from '../../assets/image7.jpeg';
+import image8 from '../../assets/image8.jpeg';
+import image9 from '../../assets/image9.png';
+import image10 from '../../assets/image10.png';
+import image11 from '../../assets/image11.png';
 const galleryImages = [
   {
     src: image1,
@@ -36,6 +41,31 @@ const galleryImages = [
     src: image6,
     alt: 'Koltuk Takımı Paketleme',
     title: 'Özenli Paketleme'
+  },
+  {
+    src: image7,
+    alt: 'Genel',
+    title: 'Güvenli taşımacılık'
+  },
+  {
+    src: image8,
+    alt: 'Genel',
+    title: 'Güvenli taşımacılık'
+  },
+  {
+    src: image9,
+    alt: 'Genel',
+    title: 'Güvenli taşımacılık'
+  },
+  {
+    src: image10,
+    alt: 'Genel',
+    title: 'Güvenli taşımacılık'
+  },
+  {
+    src: image11,
+    alt: 'Genel',
+    title: 'Güvenli taşımacılık'
   }
 ];
 
@@ -47,7 +77,7 @@ export function Gallery() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         {/* Header */}
         <div className="text-center mb-16">
-          <span className="text-blue-600 font-semibold text-sm uppercase tracking-wider">Galeri</span>
+          <span className="text-yellow-600 font-semibold text-sm uppercase tracking-wider">Galeri</span>
           <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mt-3 mb-4">
             Çalışmalarımızdan Kareler
           </h1>
@@ -79,21 +109,21 @@ export function Gallery() {
         </div>
 
         {/* Call to Action */}
-        <div className="mt-20 bg-gradient-to-r from-blue-600 to-blue-700 rounded-3xl p-12 text-center text-white">
+        <div className="mt-20 bg-gradient-to-r from-yellow-500 to-yellow-600 rounded-3xl p-12 text-center text-gray-900">
           <h2 className="text-3xl font-bold mb-4">Siz de Bizimle Çalışın</h2>
-          <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
+          <p className="text-xl text-yellow-900 mb-8 max-w-2xl mx-auto">
             Profesyonel ekibimiz ve modern araç filomuzla güvenli taşımacılık hizmeti için bize ulaşın
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <a
               href="/#contact"
-              className="bg-white text-blue-600 px-8 py-4 rounded-full hover:bg-blue-50 transition-colors font-medium text-lg"
+              className="bg-gray-900 text-white px-8 py-4 rounded-full hover:bg-gray-800 transition-colors font-medium text-lg"
             >
               Bize Yazın
             </a>
             <a
-              href="tel:03123721409"
-              className="border-2 border-white text-white px-8 py-4 rounded-full hover:bg-white hover:text-blue-600 transition-colors font-medium text-lg"
+              href="tel:05545854299"
+              className="border-2 border-gray-900 text-gray-900 px-8 py-4 rounded-full hover:bg-gray-900 hover:text-white transition-colors font-medium text-lg"
             >
               Hemen Arayın
             </a>

@@ -25,7 +25,7 @@ export function Contact() {
         { text: '0 312 372 14 09', hours: 'Pzt-Cmt: 08:00-21:00, Pazar: 08:00-21:00' },
         { text: '0 554 585 42 99', hours: 'Pzt-Cmt: 08:00-23:00, Pazar: 08:00-23:00' }
       ],
-      link: 'tel:03123721409'
+      link: 'tel:05545854299'
     },
     {
       icon: Mail,
@@ -55,12 +55,12 @@ export function Contact() {
     }
   ];
 
-  return (
+   return (
     <section id="contact" className="py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section header */}
         <div className="text-center mb-16">
-          <span className="text-blue-600 font-semibold text-sm uppercase tracking-wider">İletişim</span>
+          <span className="text-yellow-600 font-semibold text-sm uppercase tracking-wider">İletişim</span>
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mt-3 mb-4">
             Bizimle İletişime Geçin
           </h2>
@@ -84,7 +84,7 @@ export function Contact() {
                   required
                   value={formData.name}
                   onChange={(e) => setFormData({...formData, name: e.target.value})}
-                  className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-blue-600 focus:border-transparent outline-none transition-all"
+                  className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-yellow-500 focus:border-transparent outline-none transition-all"
                   placeholder="Adınız ve soyadınız"
                 />
               </div>
@@ -100,7 +100,7 @@ export function Contact() {
                     required
                     value={formData.phone}
                     onChange={(e) => setFormData({...formData, phone: e.target.value})}
-                    className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-blue-600 focus:border-transparent outline-none transition-all"
+                    className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-yellow-500 focus:border-transparent outline-none transition-all"
                     placeholder="0555 555 55 55"
                   />
                 </div>
@@ -114,7 +114,7 @@ export function Contact() {
                     id="email"
                     value={formData.email}
                     onChange={(e) => setFormData({...formData, email: e.target.value})}
-                    className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-blue-600 focus:border-transparent outline-none transition-all"
+                    className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-yellow-500 focus:border-transparent outline-none transition-all"
                     placeholder="ornek@email.com"
                   />
                 </div>
@@ -128,7 +128,7 @@ export function Contact() {
                   id="service"
                   value={formData.service}
                   onChange={(e) => setFormData({...formData, service: e.target.value})}
-                  className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-blue-600 focus:border-transparent outline-none transition-all"
+                  className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-yellow-500 focus:border-transparent outline-none transition-all"
                 >
                   <option value="">Seçiniz (opsiyonel)</option>
                   <optgroup label="Bireysel Hizmetler">
@@ -138,6 +138,7 @@ export function Contact() {
                     <option value="sehirlerarasi">Şehirlerarası Nakliyat</option>
                     <option value="depolama">Eşya Depolama</option>
                     <option value="parca">Parça Eşya Taşıma</option>
+                    <option value="kurum">Kurum Taşıma</option>
                   </optgroup>
                   <optgroup label="Kurumsal Hizmetler">
                     <option value="sigortali">Sigortalı Nakliyat</option>
@@ -160,14 +161,14 @@ export function Contact() {
                   required
                   value={formData.message}
                   onChange={(e) => setFormData({...formData, message: e.target.value})}
-                  className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-blue-600 focus:border-transparent outline-none transition-all resize-none"
+                  className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-yellow-500 focus:border-transparent outline-none transition-all resize-none"
                   placeholder="Mesajınızı buraya yazın..."
                 />
               </div>
 
               <button
                 type="submit"
-                className="w-full bg-blue-600 text-white px-8 py-4 rounded-xl hover:bg-blue-700 transition-all hover:shadow-lg flex items-center justify-center gap-2 font-medium text-lg"
+                className="w-full bg-yellow-500 text-gray-900 px-8 py-4 rounded-xl hover:bg-yellow-600 transition-all hover:shadow-lg flex items-center justify-center gap-2 font-medium text-lg"
               >
                 Mesaj Gönder
                 <Send className="w-5 h-5" />
@@ -183,10 +184,10 @@ export function Contact() {
                 href={info.link}
                 target={info.icon === MapPin ? "_blank" : undefined}
                 rel={info.icon === MapPin ? "noopener noreferrer" : undefined}
-                className="flex items-start gap-6 p-6 bg-gray-50 rounded-2xl hover:bg-blue-50 transition-all group"
+                className="flex items-start gap-6 p-6 bg-gray-50 rounded-2xl hover:bg-yellow-50 transition-all group"
               >
-                <div className="bg-blue-100 w-14 h-14 rounded-2xl flex items-center justify-center flex-shrink-0 group-hover:bg-blue-600 transition-colors">
-                  <info.icon className="w-7 h-7 text-blue-600 group-hover:text-white transition-colors" />
+                <div className="bg-yellow-100 w-14 h-14 rounded-2xl flex items-center justify-center flex-shrink-0 group-hover:bg-yellow-500 transition-colors">
+                  <info.icon className="w-7 h-7 text-yellow-600 group-hover:text-white transition-colors" />
                 </div>
                 <div>
                   <h4 className="font-semibold text-gray-900 mb-2">{info.title}</h4>
@@ -203,7 +204,7 @@ export function Contact() {
             {/* Map placeholder */}
             <div className="mt-8 rounded-2xl overflow-hidden shadow-lg h-64 bg-gray-200">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3059.3!2d32.9!3d39.9!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMznCsDU0JzAwLjAiTiAzMsKwNTQnMDAuMCJF!5e0!3m2!1str!2str!4v1234567890"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3060.162042195743!2d32.91090247624208!3d39.915389771524424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14d351c442d54ca3%3A0x225feb4e51c76554!2zxZ5haGludGVwZSwgNjcwLiBTay4gTm86NS9BLCAwNjQ3MCBNYW1hay9BbmthcmEsIFTDvHJraXll!5e0!3m2!1sen!2sus!4v1770211449138!5m2!1sen!2sus"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
