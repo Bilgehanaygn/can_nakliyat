@@ -36,6 +36,12 @@ const individualServices = [
     title: 'Parça Eşya Taşıma',
     description: 'Tek parça veya birkaç parça eşya taşımacılığı için ekonomik çözümler. Küçük taşınmalar için ideal.',
     features: ['Ekonomik Fiyat', 'Hızlı Teslimat', 'Güvenli Taşıma']
+  },
+  {
+    icon: Users,
+    title: 'Kurum Taşıma',
+    description: 'Kurumlar için özel taşımacılık çözümleri. Şirketinizin ihtiyaçlarına uygun profesyonel hizmet.',
+    features: ['Kurumsal Çözüm', 'Özel Fiyatlandırma', 'Öncelikli Hizmet']
   }
 ];
 
@@ -84,7 +90,7 @@ export function Services() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section header */}
         <div className="text-center mb-16">
-          <span className="text-blue-600 font-semibold text-sm uppercase tracking-wider">Hizmetlerimiz</span>
+          <span className="text-yellow-600 font-semibold text-sm uppercase tracking-wider">Hizmetlerimiz</span>
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mt-3 mb-4">
             Size Nasıl Yardımcı Olabiliriz?
           </h2>
@@ -100,10 +106,10 @@ export function Services() {
             {individualServices.map((service, index) => (
               <div 
                 key={index}
-                className="bg-white rounded-2xl p-8 border-2 border-gray-100 hover:border-blue-600 hover:shadow-xl transition-all duration-300 group"
+                className="bg-white rounded-2xl p-8 border-2 border-gray-100 hover:border-yellow-500 hover:shadow-xl transition-all duration-300 group"
               >
-                <div className="bg-blue-50 w-16 h-16 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-blue-600 transition-colors">
-                  <service.icon className="w-8 h-8 text-blue-600 group-hover:text-white transition-colors" />
+                <div className="bg-yellow-50 w-16 h-16 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-yellow-500 transition-colors">
+                  <service.icon className="w-8 h-8 text-yellow-600 group-hover:text-white transition-colors" />
                 </div>
                 
                 <h3 className="text-2xl font-bold text-gray-900 mb-3">{service.title}</h3>
@@ -112,7 +118,7 @@ export function Services() {
                 <ul className="space-y-2">
                   {service.features.map((feature, idx) => (
                     <li key={idx} className="flex items-center text-sm text-gray-700">
-                      <svg className="w-5 h-5 text-blue-600 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <svg className="w-5 h-5 text-yellow-600 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                       </svg>
                       {feature}
@@ -131,10 +137,10 @@ export function Services() {
             {corporateServices.map((service, index) => (
               <div 
                 key={index}
-                className="bg-white rounded-2xl p-8 border-2 border-gray-100 hover:border-blue-600 hover:shadow-xl transition-all duration-300 group"
+                className="bg-white rounded-2xl p-8 border-2 border-gray-100 hover:border-yellow-500 hover:shadow-xl transition-all duration-300 group"
               >
-                <div className="bg-blue-50 w-16 h-16 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-blue-600 transition-colors">
-                  <service.icon className="w-8 h-8 text-blue-600 group-hover:text-white transition-colors" />
+                <div className="bg-yellow-50 w-16 h-16 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-yellow-500 transition-colors">
+                  <service.icon className="w-8 h-8 text-yellow-600 group-hover:text-white transition-colors" />
                 </div>
                 
                 <h3 className="text-2xl font-bold text-gray-900 mb-3">{service.title}</h3>
@@ -143,7 +149,7 @@ export function Services() {
                 <ul className="space-y-2">
                   {service.features.map((feature, idx) => (
                     <li key={idx} className="flex items-center text-sm text-gray-700">
-                      <svg className="w-5 h-5 text-blue-600 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <svg className="w-5 h-5 text-yellow-600 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                       </svg>
                       {feature}
